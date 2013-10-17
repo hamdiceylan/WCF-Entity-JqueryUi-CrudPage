@@ -1,4 +1,4 @@
-You can find the below technologies at this project.
+You can find the below technologies at this sample Crud Page.
 
 -WCF Rest Service
 -Entity Framework
