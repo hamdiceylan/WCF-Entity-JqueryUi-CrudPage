@@ -1,0 +1,247 @@
+﻿<script type="text/x-jQuery-tmpl" id="icerikTemplate">
+    <div id="deleteDialog" title="Are you sure?" style="display: none;">
+        <p class="validateTips"><b>Are you sure to delete this product?</b></p>
+    </div>
+    <div id="addNewDialog" title="Add New Product" style="display: none;">
+        <table>
+            <tr>
+                <td><b>Product Name</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <input type="text" id="ProductName" style="width: 200px;" /></td>
+            </tr>
+            <tr>
+                <td><b>Supplier</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <select style="width: 200px;" id="Supplier">
+                   <option value="1">Exotic Liquids</option>
+<option value="10">Refrescos Americanas LTDA</option>
+<option value="11">Heli Süßwaren GmbH & Co. KG</option>
+<option value="12">Plutzer Lebensmittelgroßmärkte AG</option>
+<option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option>
+<option value="14">Formaggi Fortini s.r.l.</option>
+<option value="15">Norske Meierier</option>
+<option value="16">Bigfoot Breweries</option>
+<option value="17">Svensk Sjöföda AB</option>
+<option value="18">Aux joyeux ecclésiastiques</option>
+<option value="19">New England Seafood Cannery</option>
+<option value="2">New Orleans Cajun Delights</option>
+<option value="20">Leka Trading</option>
+<option value="21">Lyngbysild</option>
+<option value="22">Zaanse Snoepfabriek</option>
+<option value="23">Karkki Oy</option>
+<option value="24">G'day, Mate</option>
+<option value="25">Ma Maison</option>
+<option value="26">Pasta Buttini s.r.l.</option>
+<option value="27">Escargots Nouveaux</option>
+<option value="28">Gai pâturage</option>
+<option value="29">Forêts d'érables</option>
+<option value="3">Grandma Kelly's Homestead</option>
+<option value="4">Tokyo Traders</option>
+<option value="5">Cooperativa de Quesos 'Las Cabras'</option>
+<option value="6">Mayumi's</option>
+<option value="7">Pavlova, Ltd.</option>
+<option value="8">Specialty Biscuits, Ltd.</option>
+<option value="9">PB Knäckebröd AB</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Category</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <select style="width: 200px;" id="CategoryId">
+                        <option value="1">Beverages </option>
+                        <option value="2">Condiments</option>
+                        <option value="3">Confections</option>
+                        <option value="4">Dairy Products</option>
+                        <option value="5">Grains/Cereals</option>
+                        <option value="6">Meat/Poultry</option>
+                        <option value="7">Produce</option>
+                        <option value="8">Seafood</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Quantity Per Unit</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <input type="text" id="QuantityPerUnit" style="width: 200px;" /></td>
+            </tr>
+            <tr>
+                <td><b>Unit Price</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <input type="text" id="UnitPrice" style="width: 200px;" /></td>
+            </tr>
+            <tr>
+                <td><b>Units In Stock</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <input type="text" id="UnitsInStock" style="width: 200px;" /></td>
+            </tr>
+            <tr>
+                <td><b>Units In Order</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <input type="text" id="UnitsInOrder" style="width: 200px;" /></td>
+            </tr>
+            <tr>
+                <td><b>Reordered Level</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <input type="text" id="ReorderedLevel" style="width: 200px;" /></td>
+            </tr>
+            <tr>
+                <td><b>Discontinued</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <select style="width: 200px;" id="Discontinued">
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <span id="WarningTextForAddProduct" style="color:red;"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="UpdateProductDialog" title="Update Product" style="display: none;">
+        <table>
+            <tr>
+                <td><b>Product Name</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <input type="text" id="UpdateProductName" style="width: 200px;" /></td>
+            </tr>
+            <tr>
+                <td><b>Supplier</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <select style="width: 200px;" id="UpdateSupplier">
+                        <option value="1">Exotic Liquids</option>
+                        <option value="10">Refrescos Americanas LTDA</option>
+                        <option value="11">Heli Süßwaren GmbH & Co. KG</option>
+                        <option value="12">Plutzer Lebensmittelgroßmärkte AG</option>
+                        <option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option>
+                        <option value="14">Formaggi Fortini s.r.l.</option>
+                        <option value="15">Norske Meierier</option>
+                        <option value="16">Bigfoot Breweries</option>
+                        <option value="17">Svensk Sjöföda AB</option>
+                        <option value="18">Aux joyeux ecclésiastiques</option>
+                        <option value="19">New England Seafood Cannery</option>
+                        <option value="2">New Orleans Cajun Delights</option>
+                        <option value="20">Leka Trading</option>
+                        <option value="21">Lyngbysild</option>
+                        <option value="22">Zaanse Snoepfabriek</option>
+                        <option value="23">Karkki Oy</option>
+                        <option value="24">G'day, Mate</option>
+                        <option value="25">Ma Maison</option>
+                        <option value="26">Pasta Buttini s.r.l.</option>
+                        <option value="27">Escargots Nouveaux</option>
+                        <option value="28">Gai pâturage</option>
+                        <option value="29">Forêts d'érables</option>
+                        <option value="3">Grandma Kelly's Homestead</option>
+                        <option value="4">Tokyo Traders</option>
+                        <option value="5">Cooperativa de Quesos 'Las Cabras'</option>
+                        <option value="6">Mayumi's</option>
+                        <option value="7">Pavlova, Ltd.</option>
+                        <option value="8">Specialty Biscuits, Ltd.</option>
+                        <option value="9">PB Knäckebröd AB</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Category</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <select style="width: 200px;" id="UpdateCategoryID">
+                        <option value="1">Beverages </option>
+                        <option value="2">Condiments</option>
+                        <option value="3">Confections</option>
+                        <option value="4">Dairy Products</option>
+                        <option value="5">Grains/Cereals</option>
+                        <option value="6">Meat/Poultry</option>
+                        <option value="7">Produce</option>
+                        <option value="8">Seafood</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Quantity Per Unit</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <input type="text" id="UpdateQuantityPerUnit" style="width: 200px;" /></td>
+            </tr>
+            <tr>
+                <td><b>Unit Price</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <input type="text" id="UpdateUnitPrice" style="width: 200px;" /></td>
+            </tr>
+            <tr>
+                <td><b>Units In Stock</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <input type="text" id="UpdateUnitsInStock" style="width: 200px;" /></td>
+            </tr>
+            <tr>
+                <td><b>Units In Order</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <input type="text" id="UpdateUnitsInOrder" style="width: 200px;" /></td>
+            </tr>
+            <tr>
+                <td><b>Reordered Level</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <input type="text" id="UpdateReorderedLevel" style="width: 200px;" /></td>
+            </tr>
+            <tr>
+                <td><b>Discontinued</b></td>
+                <td style="width: 25px;"></td>
+                <td>
+                    <select style="width: 200px;" id="UpdateDiscontinued">
+                      <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>
+                </td>
+            </tr>
+                   <tr>
+                <td colspan="3">
+                    <span id="UpdateWarningText" style="color:red;"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="users-contain" class="ui-widget">
+        <h1>Product List:</h1>
+
+        <table id="users" class="ui-widget ui-widget-content">
+            <thead>
+                <tr class="ui-widget-header ">
+                    <th colspan="2">
+                        <input type="button" value="Add New Product" onclick="OpenAddNewProductPopUp()" />
+                    </th>
+                    <th>ProductId</th>
+                    <th>ProductName</th>
+                    <th>SupplierID</th>
+                    <th>CategoryName</th>
+                    <th>QuantityPerUnit</th>
+                    <th>UnitPrice</th>
+                    <th>UnitsInStock</th>
+                    <th>UnitsInOrder</th>
+                    <th>ReorderedLevel</th>
+                    <th>Discontinued</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <input type="button" value="Add New Product" onclick="OpenAddNewProductPopUp()" />
+    </div>
+</script>

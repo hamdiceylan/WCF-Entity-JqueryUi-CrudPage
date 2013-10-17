@@ -1,0 +1,9 @@
+D:\Yedek\Hamdi Özel\D\Project\ProductDemo\ProductDemo\bin\ProductDemo.dll
+D:\Yedek\Hamdi Özel\D\Project\ProductDemo\ProductDemo\bin\ProductDemo.pdb
+D:\Yedek\Hamdi Özel\D\Project\ProductDemo\ProductDemo\obj\Debug\ProductDemo.csprojResolveAssemblyReference.cache
+D:\Yedek\Hamdi Özel\D\Project\ProductDemo\ProductDemo\obj\Debug\ProductDemo.dll
+D:\Yedek\Hamdi Özel\D\Project\ProductDemo\ProductDemo\obj\Debug\ProductDemo.pdb
+D:\Yedek\Hamdi Özel\D\Project\ProductDemo\ProductDemo\bin\EntityFramework.dll
+D:\Yedek\Hamdi Özel\D\Project\ProductDemo\ProductDemo\bin\EntityFramework.xml
+D:\Yedek\Hamdi Özel\D\Project\ProductDemo\ProductDemo\bin\Newtonsoft.Json.dll
+D:\Yedek\Hamdi Özel\D\Project\ProductDemo\ProductDemo\bin\Newtonsoft.Json.xml
